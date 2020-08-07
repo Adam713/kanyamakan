@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:text="{   كان ياما كان   }"
+                android:textAllCaps="false"
+                android:textColor="#AC3B17"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_Sher"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:onClick="ontSher"
+                app:srcCompat="@drawable/share"
+                tools:ignore="OnClick" />
+
+            <ImageView
+                android:id="@+id/image_app"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:onClick="app"
+                app:srcCompat="@drawable/more"
+                tools:ignore="OnClick" />
+
+            <ImageView
+                android:id="@+id/image_email"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:onClick="email"
+                app:srcCompat="@drawable/email"
+                tools:ignore="OnClick" />
+
+            <ImageView
+                android:id="@+id/image_close"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:onClick="close"
+                app:srcCompat="@drawable/close"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
